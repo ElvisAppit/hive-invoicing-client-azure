@@ -1,0 +1,221 @@
+@import '../node_modules/primeflex/primeflex.scss';
+
+/* general */
+.p-component,
+.p-link,
+.p-inputtext {
+    font-size: .9rem !important;
+}
+
+.crud .product-badge {
+    font-size: .8rem !important;
+}
+
+.layout-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.p-datatable .p-datatable-thead>tr>th {
+    padding: 0.15rem 1rem;
+}
+
+.p-datatable .p-datatable-tbody>tr>td {
+    padding: 0.15rem 1rem;
+}
+
+.p-datatable-loading-overlay.p-component-overlay {
+    background-color: rgba(0, 0, 0, .03);
+}
+
+.actions .p-button.p-button-icon-only {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.p-checkbox .p-checkbox-box {
+    border-width: 1px;
+    width: 15px;
+    height: 15px;
+}
+
+.p-checkbox .p-checkbox-box .p-checkbox-icon {
+    font-size: .7rem
+}
+
+input[type] {
+    width: 100%;
+    font-size: .9rem !important;
+    box-sizing: border-box;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    color: #495057;
+    background: #ffffff;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid #ced4da;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+    border-radius: 4px;
+}
+
+/* table action icons */
+.crud-demo .p-datatable.datatable-responsive .p-datatable-tbody>tr>td .actions {
+    justify-content: flex-end;
+}
+
+/* manage page buttons */
+.buttons-manage-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+    justify-content: flex-start;
+}
+
+/* invoices */
+.invoice-to {
+    border-top: 0 !important
+}
+
+/* table divider top */
+.table-divider-top {
+    margin: 2rem 1rem;
+}
+
+/* textarea */
+textarea {
+    resize: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100% !important;
+}
+
+/* file upload border */
+.p-fileupload .p-fileupload-content {
+    border: none;
+}
+
+/* file upload button bar */
+.p-fileupload-buttonbar.buttonBarFileUpload {
+    background: 'transparent';
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+    border: 'none';
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .crud-demo .p-datatable.datatable-responsive {
+
+        /* show filters on mobile devices */
+        .p-datatable-thead {
+            padding: 4rem 0;
+
+            tr>th {
+                display: flow-root !important;
+                border: none !important;
+
+            }
+
+            tr:not(:nth-child(2)) {
+                display: none !important;
+            }
+
+            tr:nth-child(2) {
+                display: grid;
+            }
+        }
+
+        div>button.p-column-filter-clear-button.p-link.p-hidden-space::nth-child(2) {
+            display: none;
+
+        }
+
+        /* table rows fix on mobile devices */
+        .p-datatable-tbody {
+            tr {
+                display: flow-root;
+                padding: 1rem 0rem;
+
+                td {
+                    .p-column-title {
+                        min-width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1091px) {
+
+
+    /* invoice preview layout topbar */
+    .layout-wrapper .layout-topbar {
+        height: 3.625rem;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+
+    /* invoice preview layout footer fix */
+    .layout-wrapper .layout-content-wrapper {
+        margin-left: 0;
+        padding-top: 3.625rem;
+    }
+
+    /* layout topbar left */
+    .layout-wrapper .layout-topbar .topbar-left {
+        width: 100%;
+        padding: 0.5rem 0;
+        gap: .3rem;
+        -ms-flex-pack: flex-start;
+        justify-content: flex-start;
+        border-bottom: none;
+    }
+
+    /* topbar left */
+    .layout-topbar .topbar-left {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    /* mobile logo */
+    .layout-wrapper .layout-topbar .mobile-logo {
+        display: none;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    /* layout topbar menu */
+    .layout-wrapper .layout-topbar .topbar-menu {
+        width: 100%;
+        padding: 0.5rem 0;
+        gap: .7rem;
+        -ms-flex-pack: flex-end;
+        justify-content: flex-end;
+    }
+
+    /* topbar menu */
+    .layout-topbar .topbar-menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    /* footer*/
+    .layout-footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}

@@ -1,6 +1,11 @@
 {
+  "trailingSlash": "auto",
   "navigationFallback": {
-    "rewrite": "/index.html",
+    "rewrite": "/",
     "exclude": ["*.{css,scss,js,png,gif,ico,jpg,svg}"]
+  },
+
+  "mimeTypes": {
+    ".json": "text/json"
   }
 }

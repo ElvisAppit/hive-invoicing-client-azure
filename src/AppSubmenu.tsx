@@ -5,7 +5,7 @@ import { classNames } from 'primereact/utils'
 import { Ripple } from 'primereact/ripple'
 import { Badge } from 'primereact/badge'
 
-const AppSubmenu = forwardRef((props: any, ref) => {
+const AppSubmenu = forwardRef((props: any) => {
   const [activeIndex, setActiveIndex] = useState(null)
 
   const onMenuItemClick = (event: any, item: any, index: any) => {

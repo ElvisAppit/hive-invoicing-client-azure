@@ -52,7 +52,7 @@ const App = () => {
   const [componentTheme, setComponentTheme] = useState('blue')
   const [logoUrl, setLogoUrl] = useState('/assets/layout/images/logo-dark.svg')
   const [codeBookEntities, setCodeBookEntities] = useState<CodeBookEntity[]>([])
-  const { userAuth, setUserAuth } = useContext(UserContext)
+  const { userAuth } = useContext(UserContext)
   const [invoiceTypes, setInvoiceTypes] = useState<CodeBook[]>([])
   const [invoiceName, setInvoiceName] = useState<string>('')
   const [codeBookBreadCrumb, setCodeBookBreadCrumb] = useState<string>()

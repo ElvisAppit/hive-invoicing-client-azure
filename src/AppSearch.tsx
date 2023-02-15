@@ -1,5 +1,4 @@
-import React, { useRef } from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react'
 import { CSSTransition } from 'react-transition-group'
 import { InputText } from 'primereact/inputtext'
 

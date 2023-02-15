@@ -2,6 +2,7 @@
   "name": "hive-invoicing-front",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@fullcalendar/core": "^5.7.2",
     "@fullcalendar/daygrid": "^5.7.2",

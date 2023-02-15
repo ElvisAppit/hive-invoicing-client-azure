@@ -54,6 +54,7 @@
     "deploy:test": "env-cmd -e test simple-ftp-deploy",
     "deploy:dev": "env-cmd -e development simple-ftp-deploy",
     "deploy:prod": "env-cmd -e production simple-ftp-deploy",
+    "build:azure": "env-cmd -e production react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",

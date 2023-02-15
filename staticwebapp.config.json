@@ -2,12 +2,5 @@
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": ["*.{css,scss,js,png,gif,ico,jpg,svg}"]
-  },
-  "routes": [
-    {
-      "route": "/example",
-      "rewrite": "/example.html",
-      "statusCode": 301
-    }
-  ]
+  }
 }
